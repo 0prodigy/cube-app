@@ -4,12 +4,12 @@ db-init:
 	./scripts/database-init.sh
 	
 
-.PHONY: start-server
-start-server:
+.PHONY: start
+start:
 	docker-compose up -d
 
-.PHONY: stop-server
-stop-server:
+.PHONY: stop
+stop:
 	docker-compose down
 
 .PHONY: build-ui
